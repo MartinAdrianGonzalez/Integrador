@@ -1,0 +1,27 @@
+img
+{
+    width: 100%;
+}
+
+.gif-container
+{
+    width: 600px;
+    height: 400px;
+}
+
+.card
+{
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.08), 0 2px 4px 0
+    rgba(0,0,0,.12);
+    padding: 20px;
+}
+
+.card.gifs
+{
+    padding: 7px !important;
+}
+
+#form-search
+{
+    padding: 10px;
+}

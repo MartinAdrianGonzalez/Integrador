@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/contacto.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/contacto.css">
+    <title>BuscaGift-contacto</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand">BuscaGift</a>
+              <form id="form-search" action="#" class="d-flex">
+                <button class="btn btn-outline-success" id="">contacto</button>
+                <button class="btn btn-outline-success" id="search">Buscar</button>
+                <input class="form-control me-2" type="search" placeholder="Ingresa tu busqueda" aria-label="Search" id="busqueda">
+              </form>
+            </div>
+          </nav>
+      <main>
+              <div class=row id="gifs-container"></div>
+      </main>
+      <h1> Para contactarte con nosotros, rellena los siguientes campos</h1>
+      <section id="formulario">
+          <div class="mb-3" id="formdata">
+            <form action="envio.html">
+            <label for="exampleFormControlInput1" class="form-label" id="Nombre">Nombre</label>
+            <input type="text" class="form-control" name="nombre" placeholder="Ej: Nicolas">
+            <label for="exampleFormControlInput1" class="form-label" id="Apellido">Apellido</label>
+            <input type="text" class="form-control" name="apellido" placeholder="Gonzalez">
+            <label for="exampleFormControlInput1" class="form-label" id="Telefono">Telefono</label>
+            <input type="number" class="form-control" name="telefono" placeholder="(2323)205423">
+            <label for="exampleFormControlInput1" class="form-label" id="Correo">Correo electronico</label>
+            <input type="email" class="form-control" name="correo" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">¿En que podemos ayudarte?</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="final">
+            <button type="submit" class="button" id="botonenviar" value="enviar">Enviar</button>
+          </div>
+        </form>
+      </section>
+      <div id="exito" style="display:none">
+        <h2>Sus datos han sido recibidos con éxito.</h2>
+    </div>
+    <div id="fracaso" style="display:none">
+        <h2>Se ha producido un error durante el envío de datos.</h2>
+    </div>
+</body>
+</html>
